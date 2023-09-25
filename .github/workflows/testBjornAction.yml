@@ -1,0 +1,19 @@
+name: PCTestDemMan
+run-name: ${{ github.actor}} is creating my own Github Actions
+on: workflow_dispatch
+jobs:
+  run-GHA-job:
+    runs-on: ubuntu-latest
+    outputs: 
+      IconResult: ${{ steps.RepeatFruits.outputs.IconResult}}
+    steps:
+      - uses: d445918237f54bee842280689eee98b2
+      - uses: bjompen/PSConfEU2023-GHA3@v1
+        id: MyAction
+        with:
+          Icons: true
+      - shell: pwsh
+        id: RepeatFruits
+        run: |
+          Write-output "From env: $($env:IconsOutput)"
+          Write-output "From output ${{ steps.MyAction.outputs.IconResult }}"
