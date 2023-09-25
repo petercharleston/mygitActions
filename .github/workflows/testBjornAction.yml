@@ -1,4 +1,4 @@
-name: PCTestDemMan
+name: PCTestDemManWorkFlow
 run-name: ${{ github.actor}} is creating my own Github Actions
 on: workflow_dispatch
 jobs:
