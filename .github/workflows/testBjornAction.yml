@@ -6,7 +6,7 @@ jobs:
     outputs: 
       IconResult: ${{ steps.RepeatFruits.outputs.IconResult}}
     steps:
-      - uses: d445918237f54bee842280689eee98b2
+      - name: d445918237f54bee842280689eee98b2
       - uses: bjompen/PSConfEU2023-GHA3@v1
         id: MyAction
         with:
