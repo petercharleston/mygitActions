@@ -1,6 +1,5 @@
 name: PCTestDemMan
 run-name: ${{ github.actor}} is creating my own Github Actions
-on: workflow_dispatch
 jobs:
   run-GHA-job:
     runs-on: ubuntu-latest
